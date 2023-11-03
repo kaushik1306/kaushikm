@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input, button, select {
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#dashboard {
+    display: none;
+}

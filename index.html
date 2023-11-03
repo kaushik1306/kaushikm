@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Online Bank Account</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bank Account Registration</h1>
+        <form id="registration-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="confirm-password" placeholder="Confirm Password">
+            <button type="submit">Register</button>
+        </form>
+        
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button type="submit" onclick="login()">Log In</button>
+        </div>
+
+        <div id="dashboard" style="display: none;">
+            <h2>Welcome, <span id="user-display"></span>!</h2>
+            <div>
+                <select id="dropdown-menu">
+                    <option value="account">Account</option>
+                    <option value="transactions">Transactions</option>
+                    <option value="settings">Settings</option>
+                </select>
+                <button onclick="navigateDashboard()">Go</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
